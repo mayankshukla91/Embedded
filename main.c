@@ -27,6 +27,9 @@ int main() {
     PIN_MANAGER_Initialize();
     TMR1_Initialize();
     
+    //enabling the interrupts  //global interrupts
+    INTCONbits.PEIE = 1;
+    INTCONbits.GIE = 1;
     
     RA2=1;        
     while(1)

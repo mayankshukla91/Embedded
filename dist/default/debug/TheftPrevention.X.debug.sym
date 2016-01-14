@@ -97,12 +97,12 @@ stackhi 20EF 0 ABS 0
 stacklo 2000 0 ABS 0
 __Hinit 14 0 CODE 0
 __Linit 14 0 CODE 0
-__end_of_main 68 0 CODE 0
+__end_of_main 6A 0 CODE 0
 __Htext 0 0 ABS 0
 __Ltext 0 0 ABS 0
 end_of_initialization 1A 0 CODE 0
 _APFCON0 11D 0 ABS 0
-_TMR1_StartTimer 6C 0 CODE 0
+_TMR1_StartTimer 6E 0 CODE 0
 _APFCON1 11E 0 ABS 0
 __Hsfr10 0 0 ABS 0
 __Lsfr10 0 0 ABS 0
@@ -180,10 +180,10 @@ __Lbank8 0 0 BANK8 1
 __Hbank9 0 0 BANK9 1
 __Lbank9 0 0 BANK9 1
 __ptext1 4E 0 CODE 0
-__ptext2 6C 0 CODE 0
+__ptext2 6E 0 CODE 0
 __ptext3 1D 0 CODE 0
 __ptext5 38 0 CODE 0
-__ptext6 68 0 CODE 0
+__ptext6 6A 0 CODE 0
 __Hclrtext 0 0 ABS 0
 __Lclrtext 0 0 ABS 0
 __end_of__initialization 1A 0 CODE 0
@@ -207,8 +207,8 @@ __size_of_main 0 0 ABS 0
 __end_of_INTERRUPT_InterruptManager 14 0 CODE 0
 __CFG_BORV$LO 0 0 ABS 0
 _PIN_MANAGER_Initialize 1D 0 CODE 0
-__end_of_TMR1_CallBack 6C 0 CODE 0
-__end_of_TMR1_StartTimer 6F 0 CODE 0
+__end_of_TMR1_CallBack 6E 0 CODE 0
+__end_of_TMR1_StartTimer 71 0 CODE 0
 __size_of_TMR1_ISR 0 0 ABS 0
 __Hbank10 0 0 BANK10 1
 __Lbank10 0 0 BANK10 1
@@ -243,7 +243,7 @@ __Hbank16 0 0 BANK16 1
 __Lbank16 0 0 BANK16 1
 __Hbank26 0 0 BANK26 1
 __Lbank26 0 0 BANK26 1
-_TMR1_CallBack 68 0 CODE 0
+_TMR1_CallBack 6A 0 CODE 0
 __Hbank17 0 0 BANK17 1
 __Lbank17 0 0 BANK17 1
 __Hbank27 0 0 BANK27 1
@@ -262,6 +262,7 @@ __LbssCOMMON 0 0 ABS 0
 __pbssCOMMON 70 0 COMMON 1
 _T1GCONbits 19 0 ABS 0
 _timer1ReloadVal 77 0 COMMON 1
+_INTCONbits B 0 ABS 0
 __Hend_init 16 0 CODE 0
 __Lend_init 14 0 CODE 0
 __size_of_TMR1_CallBack 0 0 ABS 0
@@ -296,28 +297,30 @@ __CFG_FCMEN$ON 0 0 ABS 0
 __CFG_LVP$OFF 0 0 ABS 0
 %segments
 reset_vec 0 3 CODE 0 0
-intentry 8 DD CODE 8 0
+intentry 8 E1 CODE 8 0
 config 1000E 10011 CONFIG 1000E 0
 bssCOMMON 70 78 COMMON 70 1
 %locals
 dist/default/debug\TheftPrevention.X.debug.obj
-C:\Users\mack\AppData\Local\Temp\s4hg.
-1663 16 0 CODE 0
-1666 16 0 CODE 0
-1680 16 0 CODE 0
-1681 17 0 CODE 0
-1682 18 0 CODE 0
-1683 19 0 CODE 0
-1689 1A 0 CODE 0
-1690 1A 0 CODE 0
-1691 1B 0 CODE 0
+C:\Users\mack\AppData\Local\Temp\s1pk.
+1665 16 0 CODE 0
+1668 16 0 CODE 0
+1682 16 0 CODE 0
+1683 17 0 CODE 0
+1684 18 0 CODE 0
+1685 19 0 CODE 0
+1691 1A 0 CODE 0
+1692 1A 0 CODE 0
+1693 1B 0 CODE 0
 main.c
 22 5D 0 CODE 0
 24 5D 0 CODE 0
 27 5F 0 CODE 0
 28 62 0 CODE 0
 31 65 0 CODE 0
-32 67 0 CODE 0
+32 66 0 CODE 0
+34 67 0 CODE 0
+35 69 0 CODE 0
 mcc_generated_files/tmr1.c
 64 4E 0 CODE 0
 68 4E 0 CODE 0
@@ -329,9 +332,9 @@ mcc_generated_files/tmr1.c
 86 58 0 CODE 0
 89 5A 0 CODE 0
 90 5C 0 CODE 0
-92 6C 0 CODE 0
-94 6C 0 CODE 0
-95 6E 0 CODE 0
+92 6E 0 CODE 0
+94 6E 0 CODE 0
+95 70 0 CODE 0
 mcc_generated_files/pin_manager.c
 50 1D 0 CODE 0
 51 1D 0 CODE 0
@@ -359,6 +362,6 @@ mcc_generated_files/tmr1.c
 152 3E 0 CODE 0
 154 49 0 CODE 0
 157 4B 0 CODE 0
-162 68 0 CODE 0
-164 68 0 CODE 0
-176 6B 0 CODE 0
+162 6A 0 CODE 0
+164 6A 0 CODE 0
+176 6D 0 CODE 0
